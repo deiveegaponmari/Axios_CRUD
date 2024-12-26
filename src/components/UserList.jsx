@@ -69,7 +69,7 @@ const UserList = () => {
                   onChange={(e) => setEditingUser({ ...editingUser, email: e.target.value })}
                 />
                 <button type="button" className="btn btn-success me-2" onClick={() => handleUpdate(user.id)}>Save</button>
-                <button  type="button" className="btn btn-dark" onClick={() => setEditingUser(null)}>Cancel</button>
+                <button type="button" className="btn btn-dark" onClick={() => setEditingUser(null)}>Cancel</button>
               </>
             ) : (
               <>
@@ -83,9 +83,9 @@ const UserList = () => {
       </ul>
 
       {/* Add New User */}
-     
-        <h2>Add New User</h2>
-        <div className='input-group '>
+
+      <h2>Add New User</h2>
+      <div className='input-group '>
         <input className='form-control'
           placeholder="Name"
           type='text'
